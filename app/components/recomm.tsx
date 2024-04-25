@@ -1,7 +1,9 @@
-import Card from "./card";
+import CardCourses from "./cardCourses";
+import CardAsset from './cardAsset';
+import CardCommunities from './cardCommunities';
 import { useState } from "react";
 const Recomm = ()=> {
-    const [tab, setTab] = useState(0);
+    const [tab, setTab] = useState<number>(0);
     const assetCount = 42;
     const commuCount = 10;
     const courseCount = 15;
@@ -14,7 +16,7 @@ const Recomm = ()=> {
                     <div className={`p-2  ${(tab===2)?'border-l border-r border-t rounded-tl-md rounded-tr-md bg-white text-black':'hover:border'}`} onClick={()=>setTab(2)}>Courses{'('+courseCount+')'}</div>
                 </div>
             </div>
-            <Card/>
+            <CardCommunities tab={tab}/>
         </div>
     )
 }
