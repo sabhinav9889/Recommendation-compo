@@ -1,5 +1,3 @@
-import CardCourses from "./cardCourses";
-import CardAsset from './cardAsset';
 import CardCommunities from './cardCommunities';
 import { useState } from "react";
 const Recomm = ()=> {

@@ -3,19 +3,14 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock, faLockOpen } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect, useRef } from "react";
-const Card = ({tab}:number)=> {
-    const heading = "Project Management VS Product Management";
+const Card = ({tab}:any)=> {
+  const heading = "Project Management VS Product Management";
   const desc =
     "To display a larger size To display font-boldfont-bold font-bold a larger size font-bold a larger size font-bold a larger size font-bold a larger size font-bold a larger size font-bold size font-bold a larger size font-bold larger size font-bold a larger size font-bold a larger size font-bold size font-bold a larger size font-bold";
-  const ownership = "Project Management Influencing Team [Owner]";
   const Comments = 0;
   const Visits = 12;
   const Enrolled = 25;
-  const lastActivity = "07 Nov";
-  const lastTopicName =
-    "What do you think <p className= do you think do you think";
   const UpdatedOn = "January 19, 2024";
-  const memberSize = 13;
   const isLock = 0;
   const [desbutt, setdesbutt] = useState(true);
   const [readmore, setReadmore] = useState<Boolean>(true);
